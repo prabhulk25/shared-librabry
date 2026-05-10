@@ -1,4 +1,4 @@
-@Library("name you configured under sysetm config) _
+@Library("name you configured under sysetm config") _
 pipeline{
   stages{
     stage("Greet"){
