@@ -1,0 +1,19 @@
+@Library("name you configured under sysetm config) _
+pipeline{
+  stages{
+    stage("Greet"){
+      steps{
+        script {
+          greet()
+        }
+      }
+    }
+    stage("Clone repo"){
+      steps{
+        script{
+          clone("https://github.com/prabhulk25/shared-librabry.git", "main")
+        }
+      }
+    }
+  }
+}
